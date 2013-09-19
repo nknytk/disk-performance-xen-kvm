@@ -1,0 +1,33 @@
+4k_read_1 start: 2013年  8月 25日 日曜日 10:24:17 JST
+4k_read_1: (g=0): rw=randread, bs=4K-4K/4K-4K/4K-4K, ioengine=sync, iodepth=1
+fio-2.0.13
+Starting 1 process
+4k_read_1: Laying out IO file(s) (1 file(s) / 3072MB)
+
+4k_read_1: (groupid=0, jobs=1): err= 0: pid=1700: Sun Aug 25 10:28:09 2013
+  read : io=96000KB, bw=546118 B/s, iops=133 , runt=180005msec
+    clat (usec): min=55 , max=374649 , avg=7493.23, stdev=5353.84
+     lat (usec): min=55 , max=374650 , avg=7493.60, stdev=5353.85
+    clat percentiles (usec):
+     |  1.00th=[   83],  5.00th=[  112], 10.00th=[  207], 20.00th=[ 4704],
+     | 30.00th=[ 5728], 40.00th=[ 6688], 50.00th=[ 7648], 60.00th=[ 8640],
+     | 70.00th=[ 9536], 80.00th=[10560], 90.00th=[11584], 95.00th=[12224],
+     | 99.00th=[17280], 99.50th=[25728], 99.90th=[44288], 99.95th=[56576],
+     | 99.99th=[126464]
+    bw (KB/s)  : min=  197, max=  683, per=100.00%, avg=533.88, stdev=53.84
+    lat (usec) : 100=2.44%, 250=8.40%, 500=0.35%, 750=0.01%, 1000=0.01%
+    lat (msec) : 2=0.03%, 4=3.79%, 10=59.55%, 20=24.57%, 50=0.79%
+    lat (msec) : 100=0.05%, 250=0.01%, 500=0.01%
+  cpu          : usr=0.05%, sys=0.55%, ctx=24010, majf=0, minf=28
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=24000/w=0/d=0, short=r=0/w=0/d=0
+
+Run status group 0 (all jobs):
+   READ: io=96000KB, aggrb=533KB/s, minb=533KB/s, maxb=533KB/s, mint=180005msec, maxt=180005msec
+
+Disk stats (read/write):
+    dm-0: ios=24243/325, merge=0/0, ticks=183047/3867, in_queue=186918, util=99.71%, aggrios=24246/225, aggrmerge=0/100, aggrticks=183076/2484, aggrin_queue=185558, aggrutil=99.70%
+  xvda: ios=24246/225, merge=0/100, ticks=183076/2484, in_queue=185558, util=99.70%
+4k_read_1 finish: 2013年  8月 25日 日曜日 10:28:09 JST

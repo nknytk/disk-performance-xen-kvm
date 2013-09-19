@@ -1,0 +1,489 @@
+22:48:27 top - 22:48:27 up 32 min,  1 user,  load average: 1.92, 1.92, 1.66
+22:48:27 Tasks:  89 total,   1 running,  88 sleeping,   0 stopped,   0 zombie
+22:48:27 Cpu(s):  1.4%us,  5.2%sy,  0.0%ni, 89.0%id,  4.5%wa,  0.0%hi,  0.0%si,  0.0%st
+22:48:27 Mem:    502296k total,   152212k used,   350084k free,     8604k buffers
+22:48:27 Swap:  1015800k total,       44k used,  1015756k free,    59168k cached
+22:48:27 
+22:48:27   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                        
+22:48:27  1656 root      20   0  137m  49m  48m S 17.9 10.0   0:00.09 fio -name=1m_read_1 -filename=/root/fiotest/data/fiotest -rw=read -bs=1m -iodep
+22:48:27     1 root      20   0 19228  412  148 S  0.0  0.1   0:00.32 /sbin/init                                                                     
+22:48:27     2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                     
+22:48:27     3 root      RT   0     0    0    0 S  0.0  0.0   0:00.03 [migration/0]                                                                  
+22:48:27     4 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [ksoftirqd/0]                                                                  
+22:48:27     5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                  
+22:48:27     6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/0]                                                                   
+22:48:27     7 root      RT   0     0    0    0 S  0.0  0.0   0:00.04 [migration/1]                                                                  
+22:48:27     8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                  
+22:48:27     9 root      20   0     0    0    0 S  0.0  0.0   0:00.04 [ksoftirqd/1]                                                                  
+22:48:27    10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/1]                                                                   
+22:48:27    11 root      20   0     0    0    0 S  0.0  0.0   0:00.05 [events/0]                                                                     
+22:48:27    12 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [events/1]                                                                     
+22:48:27    13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                       
+22:48:27    14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                      
+22:48:27    15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                        
+22:48:27    16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                    
+22:48:27    17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                           
+22:48:27    18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [sync_supers]                                                                  
+22:48:27    19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [bdi-default]                                                                  
+22:48:27    20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                
+22:48:27    21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                
+22:48:27    22 root      20   0     0    0    0 S  0.0  0.0   0:00.16 [kblockd/0]                                                                    
+22:48:27    23 root      20   0     0    0    0 S  0.0  0.0   0:00.17 [kblockd/1]                                                                    
+22:48:27    24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                       
+22:48:27    25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                 
+22:48:27    26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                
+22:48:27    27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/0]                                                                        
+22:48:27    28 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/1]                                                                        
+22:48:27    29 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata_aux]                                                                      
+22:48:27    30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ksuspend_usbd]                                                                
+22:48:27    31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khubd]                                                                        
+22:48:27    32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kseriod]                                                                      
+22:48:27    33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/0]                                                                         
+22:48:27    34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/1]                                                                         
+22:48:27    35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/0]                                                                    
+22:48:27    36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/1]                                                                    
+22:48:27    37 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khungtaskd]                                                                   
+22:48:27    38 root      20   0     0    0    0 S  0.0  0.0   0:15.93 [kswapd0]                                                                      
+22:48:27    39 root      25   5     0    0    0 S  0.0  0.0   0:00.00 [ksmd]                                                                         
+22:48:27    40 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/0]                                                                        
+22:48:27    41 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/1]                                                                        
+22:48:27    42 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/0]                                                                     
+22:48:27    43 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/1]                                                                     
+22:48:27    48 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/0]                                                                   
+22:48:27    49 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/1]                                                                   
+22:48:27    51 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kpsmoused]                                                                    
+22:48:27    52 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [usbhid_resumer]                                                               
+22:48:27    83 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kstriped]                                                                     
+22:48:27   278 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_0]                                                                    
+22:48:27   296 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_1]                                                                    
+22:48:27   384 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-blk]                                                                   
+22:48:27   421 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:27   423 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:27   440 root      20   0     0    0    0 S  0.0  0.0   0:00.45 [jbd2/dm-0-8]                                                                  
+22:48:27   441 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:27   442 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:27   530 root      16  -4 11540 1424  140 S  0.0  0.3   0:00.03 /sbin/udevd -d                                                                 
+22:48:27   785 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [vballoon]                                                                     
+22:48:27   791 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-net]                                                                   
+22:48:27   972 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [jbd2/vda1-8]                                                                  
+22:48:27   973 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:27   974 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:27  1008 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kauditd]                                                                      
+22:48:27  1195 root      20   0     0    0    0 S  0.0  0.0   0:01.38 [flush-253:0]                                                                  
+22:48:27  1226 root      20   0  9116  964  476 S  0.0  0.2   0:00.00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dh
+22:48:27  1275 root      16  -4 27636  532  300 S  0.0  0.1   0:00.00 auditd                                                                         
+22:48:27  1291 root      20   0  243m  964  428 S  0.0  0.2   0:00.01 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5                                    
+22:48:27  1340 root      20   0 64116  828  164 S  0.0  0.2   0:00.00 /usr/sbin/sshd                                                                 
+22:48:27  1416 root      20   0 78720 1136  280 S  0.0  0.2   0:00.00 /usr/libexec/postfix/master                                                    
+22:48:27  1424 postfix   20   0 78800 1080  256 S  0.0  0.2   0:00.00 pickup -l -t fifo -u                                                           
+22:48:27  1425 postfix   20   0 78968 1096  268 S  0.0  0.2   0:00.00 qmgr -l -t fifo -u                                                             
+22:48:27  1426 root      20   0  114m  908  296 S  0.0  0.2   0:00.48 crond                                                                          
+22:48:27  1439 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty1                                                       
+22:48:27  1441 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty2                                                       
+22:48:27  1443 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty3                                                       
+22:48:27  1446 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty4                                                       
+22:48:27  1447 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:27  1448 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:27  1450 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty5                                                       
+22:48:27  1452 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty6                                                       
+22:48:27  1453 root      20   0 97860 1312  388 S  0.0  0.3   0:00.11 sshd: root@pts/0                                                               
+22:48:27  1457 root      20   0  105m  520  160 S  0.0  0.1   0:00.03 -bash                                                                          
+22:48:27  1475 root      20   0  103m  800  568 S  0.0  0.2   0:00.01 /bin/bash ./fiotest.sh                                                         
+22:48:27  1651 root      20   0 98.6m  840  720 S  0.0  0.2   0:00.00 iostat -mx 5                                                                   
+22:48:27  1652 root      20   0  103m 1044  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:27  1653 root      20   0 15040 1148  880 R  0.0  0.2   0:00.00 top -bc -d5                                                                    
+22:48:27  1654 root      20   0  103m  912  760 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:27  1658 root      20   0  113m 1880  428 D  0.0  0.4   0:00.00 fio -name=1m_read_1 -filename=/root/fiotest/data/fiotest -rw=read -bs=1m -iodep
+22:48:32 
+22:48:32 
+22:48:32 top - 22:48:32 up 32 min,  1 user,  load average: 1.92, 1.92, 1.66
+22:48:32 Tasks:  89 total,   1 running,  88 sleeping,   0 stopped,   0 zombie
+22:48:32 Cpu(s):  0.1%us,  1.1%sy,  0.0%ni, 50.5%id, 48.2%wa,  0.0%hi,  0.0%si,  0.1%st
+22:48:32 Mem:    502296k total,   152468k used,   349828k free,     8612k buffers
+22:48:32 Swap:  1015800k total,       44k used,  1015756k free,    59204k cached
+22:48:32 
+22:48:32   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                        
+22:48:32  1658 root      20   0  113m 1880  428 D  2.2  0.4   0:00.11 fio -name=1m_read_1 -filename=/root/fiotest/data/fiotest -rw=read -bs=1m -iodep
+22:48:32  1656 root      20   0  137m  49m  48m S  0.2 10.0   0:00.10 fio -name=1m_read_1 -filename=/root/fiotest/data/fiotest -rw=read -bs=1m -iodep
+22:48:32     1 root      20   0 19228  412  148 S  0.0  0.1   0:00.32 /sbin/init                                                                     
+22:48:32     2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                     
+22:48:32     3 root      RT   0     0    0    0 S  0.0  0.0   0:00.03 [migration/0]                                                                  
+22:48:32     4 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [ksoftirqd/0]                                                                  
+22:48:32     5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                  
+22:48:32     6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/0]                                                                   
+22:48:32     7 root      RT   0     0    0    0 S  0.0  0.0   0:00.04 [migration/1]                                                                  
+22:48:32     8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                  
+22:48:32     9 root      20   0     0    0    0 S  0.0  0.0   0:00.04 [ksoftirqd/1]                                                                  
+22:48:32    10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/1]                                                                   
+22:48:32    11 root      20   0     0    0    0 S  0.0  0.0   0:00.05 [events/0]                                                                     
+22:48:32    12 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [events/1]                                                                     
+22:48:32    13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                       
+22:48:32    14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                      
+22:48:32    15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                        
+22:48:32    16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                    
+22:48:32    17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                           
+22:48:32    18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [sync_supers]                                                                  
+22:48:32    19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [bdi-default]                                                                  
+22:48:32    20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                
+22:48:32    21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                
+22:48:32    22 root      20   0     0    0    0 S  0.0  0.0   0:00.16 [kblockd/0]                                                                    
+22:48:32    23 root      20   0     0    0    0 S  0.0  0.0   0:00.17 [kblockd/1]                                                                    
+22:48:32    24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                       
+22:48:32    25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                 
+22:48:32    26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                
+22:48:32    27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/0]                                                                        
+22:48:32    28 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/1]                                                                        
+22:48:32    29 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata_aux]                                                                      
+22:48:32    30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ksuspend_usbd]                                                                
+22:48:32    31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khubd]                                                                        
+22:48:32    32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kseriod]                                                                      
+22:48:32    33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/0]                                                                         
+22:48:32    34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/1]                                                                         
+22:48:32    35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/0]                                                                    
+22:48:32    36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/1]                                                                    
+22:48:32    37 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khungtaskd]                                                                   
+22:48:32    38 root      20   0     0    0    0 S  0.0  0.0   0:15.93 [kswapd0]                                                                      
+22:48:32    39 root      25   5     0    0    0 S  0.0  0.0   0:00.00 [ksmd]                                                                         
+22:48:32    40 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/0]                                                                        
+22:48:32    41 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/1]                                                                        
+22:48:32    42 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/0]                                                                     
+22:48:32    43 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/1]                                                                     
+22:48:32    48 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/0]                                                                   
+22:48:32    49 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/1]                                                                   
+22:48:32    51 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kpsmoused]                                                                    
+22:48:32    52 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [usbhid_resumer]                                                               
+22:48:32    83 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kstriped]                                                                     
+22:48:32   278 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_0]                                                                    
+22:48:32   296 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_1]                                                                    
+22:48:32   384 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-blk]                                                                   
+22:48:32   421 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:32   423 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:32   440 root      20   0     0    0    0 S  0.0  0.0   0:00.45 [jbd2/dm-0-8]                                                                  
+22:48:32   441 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:32   442 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:32   530 root      16  -4 11540 1424  140 S  0.0  0.3   0:00.03 /sbin/udevd -d                                                                 
+22:48:32   785 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [vballoon]                                                                     
+22:48:32   791 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-net]                                                                   
+22:48:32   972 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [jbd2/vda1-8]                                                                  
+22:48:32   973 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:32   974 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:32  1008 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kauditd]                                                                      
+22:48:32  1195 root      20   0     0    0    0 S  0.0  0.0   0:01.38 [flush-253:0]                                                                  
+22:48:32  1226 root      20   0  9116  964  476 S  0.0  0.2   0:00.00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dh
+22:48:32  1275 root      16  -4 27636  532  300 S  0.0  0.1   0:00.00 auditd                                                                         
+22:48:32  1291 root      20   0  243m  964  428 S  0.0  0.2   0:00.01 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5                                    
+22:48:32  1340 root      20   0 64116  828  164 S  0.0  0.2   0:00.00 /usr/sbin/sshd                                                                 
+22:48:32  1416 root      20   0 78720 1136  280 S  0.0  0.2   0:00.00 /usr/libexec/postfix/master                                                    
+22:48:32  1424 postfix   20   0 78800 1080  256 S  0.0  0.2   0:00.00 pickup -l -t fifo -u                                                           
+22:48:32  1425 postfix   20   0 78968 1096  268 S  0.0  0.2   0:00.00 qmgr -l -t fifo -u                                                             
+22:48:32  1426 root      20   0  114m  908  296 S  0.0  0.2   0:00.48 crond                                                                          
+22:48:32  1439 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty1                                                       
+22:48:32  1441 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty2                                                       
+22:48:32  1443 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty3                                                       
+22:48:32  1446 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty4                                                       
+22:48:32  1447 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:32  1448 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:32  1450 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty5                                                       
+22:48:32  1452 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty6                                                       
+22:48:32  1453 root      20   0 97860 1312  388 S  0.0  0.3   0:00.11 sshd: root@pts/0                                                               
+22:48:32  1457 root      20   0  105m  520  160 S  0.0  0.1   0:00.03 -bash                                                                          
+22:48:32  1475 root      20   0  103m  800  568 S  0.0  0.2   0:00.01 /bin/bash ./fiotest.sh                                                         
+22:48:32  1651 root      20   0 98.6m  840  720 S  0.0  0.2   0:00.00 iostat -mx 5                                                                   
+22:48:32  1652 root      20   0  103m 1044  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:32  1653 root      20   0 15016 1244  968 R  0.0  0.2   0:00.00 top -bc -d5                                                                    
+22:48:32  1654 root      20   0  103m 1060  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:37 
+22:48:37 
+22:48:37 top - 22:48:37 up 32 min,  1 user,  load average: 1.85, 1.90, 1.65
+22:48:37 Tasks:  89 total,   1 running,  88 sleeping,   0 stopped,   0 zombie
+22:48:37 Cpu(s):  0.1%us,  1.3%sy,  0.0%ni, 49.9%id, 48.7%wa,  0.0%hi,  0.0%si,  0.0%st
+22:48:37 Mem:    502296k total,   152468k used,   349828k free,     8612k buffers
+22:48:37 Swap:  1015800k total,       44k used,  1015756k free,    59216k cached
+22:48:37 
+22:48:37   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                        
+22:48:37  1658 root      20   0  113m 1880  428 D  2.4  0.4   0:00.23 fio -name=1m_read_1 -filename=/root/fiotest/data/fiotest -rw=read -bs=1m -iodep
+22:48:37  1656 root      20   0  137m  49m  48m S  0.4 10.0   0:00.12 fio -name=1m_read_1 -filename=/root/fiotest/data/fiotest -rw=read -bs=1m -iodep
+22:48:37     1 root      20   0 19228  412  148 S  0.0  0.1   0:00.32 /sbin/init                                                                     
+22:48:37     2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                     
+22:48:37     3 root      RT   0     0    0    0 S  0.0  0.0   0:00.03 [migration/0]                                                                  
+22:48:37     4 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [ksoftirqd/0]                                                                  
+22:48:37     5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                  
+22:48:37     6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/0]                                                                   
+22:48:37     7 root      RT   0     0    0    0 S  0.0  0.0   0:00.04 [migration/1]                                                                  
+22:48:37     8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                  
+22:48:37     9 root      20   0     0    0    0 S  0.0  0.0   0:00.04 [ksoftirqd/1]                                                                  
+22:48:37    10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/1]                                                                   
+22:48:37    11 root      20   0     0    0    0 S  0.0  0.0   0:00.05 [events/0]                                                                     
+22:48:37    12 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [events/1]                                                                     
+22:48:37    13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                       
+22:48:37    14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                      
+22:48:37    15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                        
+22:48:37    16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                    
+22:48:37    17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                           
+22:48:37    18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [sync_supers]                                                                  
+22:48:37    19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [bdi-default]                                                                  
+22:48:37    20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                
+22:48:37    21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                
+22:48:37    22 root      20   0     0    0    0 S  0.0  0.0   0:00.16 [kblockd/0]                                                                    
+22:48:37    23 root      20   0     0    0    0 S  0.0  0.0   0:00.17 [kblockd/1]                                                                    
+22:48:37    24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                       
+22:48:37    25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                 
+22:48:37    26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                
+22:48:37    27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/0]                                                                        
+22:48:37    28 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/1]                                                                        
+22:48:37    29 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata_aux]                                                                      
+22:48:37    30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ksuspend_usbd]                                                                
+22:48:37    31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khubd]                                                                        
+22:48:37    32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kseriod]                                                                      
+22:48:37    33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/0]                                                                         
+22:48:37    34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/1]                                                                         
+22:48:37    35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/0]                                                                    
+22:48:37    36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/1]                                                                    
+22:48:37    37 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khungtaskd]                                                                   
+22:48:37    38 root      20   0     0    0    0 S  0.0  0.0   0:15.93 [kswapd0]                                                                      
+22:48:37    39 root      25   5     0    0    0 S  0.0  0.0   0:00.00 [ksmd]                                                                         
+22:48:37    40 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/0]                                                                        
+22:48:37    41 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/1]                                                                        
+22:48:37    42 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/0]                                                                     
+22:48:37    43 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/1]                                                                     
+22:48:37    48 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/0]                                                                   
+22:48:37    49 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/1]                                                                   
+22:48:37    51 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kpsmoused]                                                                    
+22:48:37    52 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [usbhid_resumer]                                                               
+22:48:37    83 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kstriped]                                                                     
+22:48:37   278 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_0]                                                                    
+22:48:37   296 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_1]                                                                    
+22:48:37   384 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-blk]                                                                   
+22:48:37   421 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:37   423 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:37   440 root      20   0     0    0    0 S  0.0  0.0   0:00.45 [jbd2/dm-0-8]                                                                  
+22:48:37   441 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:37   442 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:37   530 root      16  -4 11540 1424  140 S  0.0  0.3   0:00.03 /sbin/udevd -d                                                                 
+22:48:37   785 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [vballoon]                                                                     
+22:48:37   791 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-net]                                                                   
+22:48:37   972 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [jbd2/vda1-8]                                                                  
+22:48:37   973 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:37   974 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:37  1008 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kauditd]                                                                      
+22:48:37  1195 root      20   0     0    0    0 S  0.0  0.0   0:01.38 [flush-253:0]                                                                  
+22:48:37  1226 root      20   0  9116  964  476 S  0.0  0.2   0:00.00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dh
+22:48:37  1275 root      16  -4 27636  532  300 S  0.0  0.1   0:00.00 auditd                                                                         
+22:48:37  1291 root      20   0  243m  964  428 S  0.0  0.2   0:00.01 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5                                    
+22:48:37  1340 root      20   0 64116  828  164 S  0.0  0.2   0:00.00 /usr/sbin/sshd                                                                 
+22:48:37  1416 root      20   0 78720 1136  280 S  0.0  0.2   0:00.00 /usr/libexec/postfix/master                                                    
+22:48:37  1424 postfix   20   0 78800 1080  256 S  0.0  0.2   0:00.00 pickup -l -t fifo -u                                                           
+22:48:37  1425 postfix   20   0 78968 1096  268 S  0.0  0.2   0:00.00 qmgr -l -t fifo -u                                                             
+22:48:37  1426 root      20   0  114m  908  296 S  0.0  0.2   0:00.48 crond                                                                          
+22:48:37  1439 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty1                                                       
+22:48:37  1441 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty2                                                       
+22:48:37  1443 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty3                                                       
+22:48:37  1446 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty4                                                       
+22:48:37  1447 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:37  1448 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:37  1450 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty5                                                       
+22:48:37  1452 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty6                                                       
+22:48:37  1453 root      20   0 97860 1312  388 S  0.0  0.3   0:00.11 sshd: root@pts/0                                                               
+22:48:37  1457 root      20   0  105m  520  160 S  0.0  0.1   0:00.03 -bash                                                                          
+22:48:37  1475 root      20   0  103m  800  568 S  0.0  0.2   0:00.01 /bin/bash ./fiotest.sh                                                         
+22:48:37  1651 root      20   0 98.6m  840  720 S  0.0  0.2   0:00.00 iostat -mx 5                                                                   
+22:48:37  1652 root      20   0  103m 1044  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:37  1653 root      20   0 15016 1244  968 R  0.0  0.2   0:00.00 top -bc -d5                                                                    
+22:48:37  1654 root      20   0  103m 1060  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:42 
+22:48:42 
+22:48:42 top - 22:48:42 up 32 min,  1 user,  load average: 1.86, 1.91, 1.65
+22:48:42 Tasks:  89 total,   1 running,  88 sleeping,   0 stopped,   0 zombie
+22:48:42 Cpu(s):  0.4%us,  1.8%sy,  0.0%ni, 76.2%id, 21.6%wa,  0.0%hi,  0.0%si,  0.0%st
+22:48:42 Mem:    502296k total,   152592k used,   349704k free,     8628k buffers
+22:48:42 Swap:  1015800k total,       44k used,  1015756k free,    59228k cached
+22:48:42 
+22:48:42   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                        
+22:48:42  1661 root      20   0  137m  49m  48m S  1.8 10.0   0:00.09 fio -name=1m_write_1 -filename=/root/fiotest/data/fiotest -rw=write -bs=1m -iod
+22:48:42  1663 root      20   0  113m 1884  432 D  1.8  0.4   0:00.09 fio -name=1m_write_1 -filename=/root/fiotest/data/fiotest -rw=write -bs=1m -iod
+22:48:42     1 root      20   0 19228  412  148 S  0.0  0.1   0:00.32 /sbin/init                                                                     
+22:48:42     2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                     
+22:48:42     3 root      RT   0     0    0    0 S  0.0  0.0   0:00.03 [migration/0]                                                                  
+22:48:42     4 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [ksoftirqd/0]                                                                  
+22:48:42     5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                  
+22:48:42     6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/0]                                                                   
+22:48:42     7 root      RT   0     0    0    0 S  0.0  0.0   0:00.04 [migration/1]                                                                  
+22:48:42     8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                  
+22:48:42     9 root      20   0     0    0    0 S  0.0  0.0   0:00.04 [ksoftirqd/1]                                                                  
+22:48:42    10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/1]                                                                   
+22:48:42    11 root      20   0     0    0    0 S  0.0  0.0   0:00.05 [events/0]                                                                     
+22:48:42    12 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [events/1]                                                                     
+22:48:42    13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                       
+22:48:42    14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                      
+22:48:42    15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                        
+22:48:42    16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                    
+22:48:42    17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                           
+22:48:42    18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [sync_supers]                                                                  
+22:48:42    19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [bdi-default]                                                                  
+22:48:42    20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                
+22:48:42    21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                
+22:48:42    22 root      20   0     0    0    0 S  0.0  0.0   0:00.16 [kblockd/0]                                                                    
+22:48:42    23 root      20   0     0    0    0 S  0.0  0.0   0:00.17 [kblockd/1]                                                                    
+22:48:42    24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                       
+22:48:42    25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                 
+22:48:42    26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                
+22:48:42    27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/0]                                                                        
+22:48:42    28 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/1]                                                                        
+22:48:42    29 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata_aux]                                                                      
+22:48:42    30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ksuspend_usbd]                                                                
+22:48:42    31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khubd]                                                                        
+22:48:42    32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kseriod]                                                                      
+22:48:42    33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/0]                                                                         
+22:48:42    34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/1]                                                                         
+22:48:42    35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/0]                                                                    
+22:48:42    36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/1]                                                                    
+22:48:42    37 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khungtaskd]                                                                   
+22:48:42    38 root      20   0     0    0    0 S  0.0  0.0   0:15.93 [kswapd0]                                                                      
+22:48:42    39 root      25   5     0    0    0 S  0.0  0.0   0:00.00 [ksmd]                                                                         
+22:48:42    40 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/0]                                                                        
+22:48:42    41 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/1]                                                                        
+22:48:42    42 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/0]                                                                     
+22:48:42    43 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/1]                                                                     
+22:48:42    48 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/0]                                                                   
+22:48:42    49 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/1]                                                                   
+22:48:42    51 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kpsmoused]                                                                    
+22:48:42    52 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [usbhid_resumer]                                                               
+22:48:42    83 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kstriped]                                                                     
+22:48:42   278 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_0]                                                                    
+22:48:42   296 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_1]                                                                    
+22:48:42   384 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-blk]                                                                   
+22:48:42   421 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:42   423 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:42   440 root      20   0     0    0    0 S  0.0  0.0   0:00.45 [jbd2/dm-0-8]                                                                  
+22:48:42   441 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:42   442 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:42   530 root      16  -4 11540 1424  140 S  0.0  0.3   0:00.03 /sbin/udevd -d                                                                 
+22:48:42   785 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [vballoon]                                                                     
+22:48:42   791 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-net]                                                                   
+22:48:42   972 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [jbd2/vda1-8]                                                                  
+22:48:42   973 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:42   974 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:42  1008 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kauditd]                                                                      
+22:48:42  1195 root      20   0     0    0    0 S  0.0  0.0   0:01.38 [flush-253:0]                                                                  
+22:48:42  1226 root      20   0  9116  964  476 S  0.0  0.2   0:00.00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dh
+22:48:42  1275 root      16  -4 27636  532  300 S  0.0  0.1   0:00.00 auditd                                                                         
+22:48:42  1291 root      20   0  243m  964  428 S  0.0  0.2   0:00.01 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5                                    
+22:48:42  1340 root      20   0 64116  828  164 S  0.0  0.2   0:00.00 /usr/sbin/sshd                                                                 
+22:48:42  1416 root      20   0 78720 1136  280 S  0.0  0.2   0:00.00 /usr/libexec/postfix/master                                                    
+22:48:42  1424 postfix   20   0 78800 1080  256 S  0.0  0.2   0:00.00 pickup -l -t fifo -u                                                           
+22:48:42  1425 postfix   20   0 78968 1096  268 S  0.0  0.2   0:00.00 qmgr -l -t fifo -u                                                             
+22:48:42  1426 root      20   0  114m  908  296 S  0.0  0.2   0:00.48 crond                                                                          
+22:48:42  1439 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty1                                                       
+22:48:42  1441 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty2                                                       
+22:48:42  1443 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty3                                                       
+22:48:42  1446 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty4                                                       
+22:48:42  1447 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:42  1448 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:42  1450 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty5                                                       
+22:48:42  1452 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty6                                                       
+22:48:42  1453 root      20   0 97860 1312  388 S  0.0  0.3   0:00.11 sshd: root@pts/0                                                               
+22:48:42  1457 root      20   0  105m  520  160 S  0.0  0.1   0:00.03 -bash                                                                          
+22:48:42  1475 root      20   0  103m  800  568 S  0.0  0.2   0:00.01 /bin/bash ./fiotest.sh                                                         
+22:48:42  1651 root      20   0 98.6m  840  720 S  0.0  0.2   0:00.00 iostat -mx 5                                                                   
+22:48:42  1652 root      20   0  103m 1044  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:42  1653 root      20   0 15016 1244  968 R  0.0  0.2   0:00.00 top -bc -d5                                                                    
+22:48:42  1654 root      20   0  103m 1060  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:47 
+22:48:47 
+22:48:47 top - 22:48:47 up 32 min,  1 user,  load average: 1.87, 1.91, 1.66
+22:48:47 Tasks:  89 total,   2 running,  87 sleeping,   0 stopped,   0 zombie
+22:48:47 Cpu(s):  0.6%us,  1.0%sy,  0.0%ni, 91.5%id,  6.9%wa,  0.0%hi,  0.0%si,  0.0%st
+22:48:47 Mem:    502296k total,   152716k used,   349580k free,     8636k buffers
+22:48:47 Swap:  1015800k total,       44k used,  1015756k free,    59240k cached
+22:48:47 
+22:48:47   PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND                                                                        
+22:48:47  1663 root      20   0  113m 1884  432 R  3.4  0.4   0:00.26 fio -name=1m_write_1 -filename=/root/fiotest/data/fiotest -rw=write -bs=1m -iod
+22:48:47  1661 root      20   0  137m  49m  48m S  0.4 10.0   0:00.11 fio -name=1m_write_1 -filename=/root/fiotest/data/fiotest -rw=write -bs=1m -iod
+22:48:47   440 root      20   0     0    0    0 S  0.2  0.0   0:00.46 [jbd2/dm-0-8]                                                                  
+22:48:47     1 root      20   0 19228  412  148 S  0.0  0.1   0:00.32 /sbin/init                                                                     
+22:48:47     2 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthreadd]                                                                     
+22:48:47     3 root      RT   0     0    0    0 S  0.0  0.0   0:00.03 [migration/0]                                                                  
+22:48:47     4 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [ksoftirqd/0]                                                                  
+22:48:47     5 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/0]                                                                  
+22:48:47     6 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/0]                                                                   
+22:48:47     7 root      RT   0     0    0    0 S  0.0  0.0   0:00.04 [migration/1]                                                                  
+22:48:47     8 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [migration/1]                                                                  
+22:48:47     9 root      20   0     0    0    0 S  0.0  0.0   0:00.04 [ksoftirqd/1]                                                                  
+22:48:47    10 root      RT   0     0    0    0 S  0.0  0.0   0:00.00 [watchdog/1]                                                                   
+22:48:47    11 root      20   0     0    0    0 S  0.0  0.0   0:00.05 [events/0]                                                                     
+22:48:47    12 root      20   0     0    0    0 S  0.0  0.0   0:00.06 [events/1]                                                                     
+22:48:47    13 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [cgroup]                                                                       
+22:48:47    14 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khelper]                                                                      
+22:48:47    15 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [netns]                                                                        
+22:48:47    16 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [async/mgr]                                                                    
+22:48:47    17 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [pm]                                                                           
+22:48:47    18 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [sync_supers]                                                                  
+22:48:47    19 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [bdi-default]                                                                  
+22:48:47    20 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/0]                                                                
+22:48:47    21 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kintegrityd/1]                                                                
+22:48:47    22 root      20   0     0    0    0 S  0.0  0.0   0:00.16 [kblockd/0]                                                                    
+22:48:47    23 root      20   0     0    0    0 S  0.0  0.0   0:00.17 [kblockd/1]                                                                    
+22:48:47    24 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpid]                                                                       
+22:48:47    25 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_notify]                                                                 
+22:48:47    26 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kacpi_hotplug]                                                                
+22:48:47    27 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/0]                                                                        
+22:48:47    28 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata/1]                                                                        
+22:48:47    29 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ata_aux]                                                                      
+22:48:47    30 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ksuspend_usbd]                                                                
+22:48:47    31 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khubd]                                                                        
+22:48:47    32 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kseriod]                                                                      
+22:48:47    33 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/0]                                                                         
+22:48:47    34 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md/1]                                                                         
+22:48:47    35 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/0]                                                                    
+22:48:47    36 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [md_misc/1]                                                                    
+22:48:47    37 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [khungtaskd]                                                                   
+22:48:47    38 root      20   0     0    0    0 S  0.0  0.0   0:15.93 [kswapd0]                                                                      
+22:48:47    39 root      25   5     0    0    0 S  0.0  0.0   0:00.00 [ksmd]                                                                         
+22:48:47    40 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/0]                                                                        
+22:48:47    41 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [aio/1]                                                                        
+22:48:47    42 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/0]                                                                     
+22:48:47    43 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [crypto/1]                                                                     
+22:48:47    48 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/0]                                                                   
+22:48:47    49 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kthrotld/1]                                                                   
+22:48:47    51 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kpsmoused]                                                                    
+22:48:47    52 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [usbhid_resumer]                                                               
+22:48:47    83 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kstriped]                                                                     
+22:48:47   278 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_0]                                                                    
+22:48:47   296 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [scsi_eh_1]                                                                    
+22:48:47   384 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-blk]                                                                   
+22:48:47   421 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:47   423 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kdmflush]                                                                     
+22:48:47   441 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:47   442 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:47   530 root      16  -4 11540 1424  140 S  0.0  0.3   0:00.03 /sbin/udevd -d                                                                 
+22:48:47   785 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [vballoon]                                                                     
+22:48:47   791 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [virtio-net]                                                                   
+22:48:47   972 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [jbd2/vda1-8]                                                                  
+22:48:47   973 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:47   974 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [ext4-dio-unwrit]                                                              
+22:48:47  1008 root      20   0     0    0    0 S  0.0  0.0   0:00.00 [kauditd]                                                                      
+22:48:47  1195 root      20   0     0    0    0 S  0.0  0.0   0:01.38 [flush-253:0]                                                                  
+22:48:47  1226 root      20   0  9116  964  476 S  0.0  0.2   0:00.00 /sbin/dhclient -1 -q -lf /var/lib/dhclient/dhclient-eth0.leases -pf /var/run/dh
+22:48:47  1275 root      16  -4 27636  532  300 S  0.0  0.1   0:00.00 auditd                                                                         
+22:48:47  1291 root      20   0  243m  964  428 S  0.0  0.2   0:00.01 /sbin/rsyslogd -i /var/run/syslogd.pid -c 5                                    
+22:48:47  1340 root      20   0 64116  828  164 S  0.0  0.2   0:00.00 /usr/sbin/sshd                                                                 
+22:48:47  1416 root      20   0 78720 1136  280 S  0.0  0.2   0:00.00 /usr/libexec/postfix/master                                                    
+22:48:47  1424 postfix   20   0 78800 1080  256 S  0.0  0.2   0:00.00 pickup -l -t fifo -u                                                           
+22:48:47  1425 postfix   20   0 78968 1096  268 S  0.0  0.2   0:00.00 qmgr -l -t fifo -u                                                             
+22:48:47  1426 root      20   0  114m  908  296 S  0.0  0.2   0:00.48 crond                                                                          
+22:48:47  1439 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty1                                                       
+22:48:47  1441 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty2                                                       
+22:48:47  1443 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty3                                                       
+22:48:47  1446 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty4                                                       
+22:48:47  1447 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:47  1448 root      18  -2 12328 2132  116 S  0.0  0.4   0:00.00 /sbin/udevd -d                                                                 
+22:48:47  1450 root      20   0  4060  188  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty5                                                       
+22:48:47  1452 root      20   0  4060  192  108 S  0.0  0.0   0:00.00 /sbin/mingetty /dev/tty6                                                       
+22:48:47  1453 root      20   0 97860 1312  388 S  0.0  0.3   0:00.11 sshd: root@pts/0                                                               
+22:48:47  1457 root      20   0  105m  520  160 S  0.0  0.1   0:00.03 -bash                                                                          
+22:48:47  1475 root      20   0  103m  800  568 S  0.0  0.2   0:00.01 /bin/bash ./fiotest.sh                                                         
+22:48:47  1651 root      20   0 98.6m  840  720 S  0.0  0.2   0:00.00 iostat -mx 5                                                                   
+22:48:47  1652 root      20   0  103m 1044  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:47  1653 root      20   0 15016 1244  968 R  0.0  0.2   0:00.00 top -bc -d5                                                                    
+22:48:47  1654 root      20   0  103m 1060  892 S  0.0  0.2   0:00.00 awk {print strftime("%H:%M:%S"),$0}                                            
+22:48:51 

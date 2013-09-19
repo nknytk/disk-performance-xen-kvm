@@ -1,0 +1,31 @@
+512_write_32 start: 2013年  8月 24日 土曜日 21:27:01 JST
+512_write_32: (g=0): rw=randwrite, bs=512-512/512-512/512-512, ioengine=sync, iodepth=32
+fio-2.0.13
+Starting 1 process
+
+512_write_32: (groupid=0, jobs=1): err= 0: pid=2479: Sat Aug 24 21:28:14 2013
+  write: io=512000KB, bw=7028.5KB/s, iops=14056 , runt= 72851msec
+    clat (usec): min=56 , max=86104 , avg=69.61, stdev=288.89
+     lat (usec): min=56 , max=86104 , avg=69.70, stdev=288.89
+    clat percentiles (usec):
+     |  1.00th=[   65],  5.00th=[   65], 10.00th=[   65], 20.00th=[   66],
+     | 30.00th=[   66], 40.00th=[   66], 50.00th=[   66], 60.00th=[   67],
+     | 70.00th=[   67], 80.00th=[   68], 90.00th=[   74], 95.00th=[   84],
+     | 99.00th=[   87], 99.50th=[   89], 99.90th=[   95], 99.95th=[  115],
+     | 99.99th=[  167]
+    bw (KB/s)  : min= 5797, max= 7308, per=100.00%, avg=7028.46, stdev=335.29
+    lat (usec) : 100=99.93%, 250=0.06%, 500=0.01%, 750=0.01%
+    lat (msec) : 2=0.01%, 10=0.01%, 20=0.01%, 100=0.01%
+  cpu          : usr=4.18%, sys=70.33%, ctx=1023994, majf=0, minf=28
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=1024000/d=0, short=r=0/w=0/d=0
+
+Run status group 0 (all jobs):
+  WRITE: io=512000KB, aggrb=7028KB/s, minb=7028KB/s, maxb=7028KB/s, mint=72851msec, maxt=72851msec
+
+Disk stats (read/write):
+    dm-0: ios=0/1021876, merge=0/0, ticks=0/57960, in_queue=57958, util=79.65%, aggrios=0/1024063, aggrmerge=0/84, aggrticks=0/57658, aggrin_queue=57529, aggrutil=78.89%
+  sda: ios=0/1024063, merge=0/84, ticks=0/57658, in_queue=57529, util=78.89%
+512_write_32 finish: 2013年  8月 24日 土曜日 21:28:14 JST

@@ -1,0 +1,30 @@
+512k_read_1 start: 2013年  8月 25日 日曜日 17:58:10 JST
+512k_read_1: (g=0): rw=randread, bs=512K-512K/512K-512K/512K-512K, ioengine=sync, iodepth=1
+fio-2.0.13
+Starting 1 process
+
+512k_read_1: (groupid=0, jobs=1): err= 0: pid=1683: Sun Aug 25 17:58:28 2013
+  read : io=3072.0MB, bw=176806KB/s, iops=345 , runt= 17792msec
+    clat (msec): min=1 , max=158 , avg= 2.89, stdev= 2.70
+     lat (msec): min=1 , max=158 , avg= 2.89, stdev= 2.70
+    clat percentiles (usec):
+     |  1.00th=[ 1592],  5.00th=[ 1912], 10.00th=[ 1976], 20.00th=[ 2040],
+     | 30.00th=[ 2128], 40.00th=[ 3088], 50.00th=[ 3216], 60.00th=[ 3248],
+     | 70.00th=[ 3248], 80.00th=[ 3280], 90.00th=[ 3344], 95.00th=[ 3376],
+     | 99.00th=[ 3472], 99.50th=[ 3568], 99.90th=[ 5024], 99.95th=[ 6368],
+     | 99.99th=[158720]
+    bw (KB/s)  : min=109349, max=197237, per=99.91%, avg=176646.40, stdev=18308.61
+    lat (msec) : 2=13.22%, 4=86.65%, 10=0.08%, 50=0.02%, 250=0.03%
+  cpu          : usr=0.01%, sys=4.34%, ctx=6196, majf=0, minf=156
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=6144/w=0/d=0, short=r=0/w=0/d=0
+
+Run status group 0 (all jobs):
+   READ: io=3072.0MB, aggrb=176805KB/s, minb=176805KB/s, maxb=176805KB/s, mint=17792msec, maxt=17792msec
+
+Disk stats (read/write):
+    dm-0: ios=73153/32, merge=0/0, ticks=137642/56, in_queue=137701, util=99.25%, aggrios=73729/32, aggrmerge=0/0, aggrticks=138508/56, aggrin_queue=138558, aggrutil=99.18%
+  xvda: ios=73729/32, merge=0/0, ticks=138508/56, in_queue=138558, util=99.18%
+512k_read_1 finish: 2013年  8月 25日 日曜日 17:58:28 JST

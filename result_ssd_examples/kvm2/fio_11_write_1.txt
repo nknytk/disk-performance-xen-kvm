@@ -1,0 +1,33 @@
+11_write_1 start: Sat Aug 31 12:14:59 JST 2013
+11_write_1: (g=0): rw=randwrite, bs=11-11/11-11/11-11, ioengine=sync, iodepth=1
+fio-2.0.13
+Starting 1 process
+
+11_write_1: (groupid=0, jobs=1): err= 0: pid=1599: Sat Aug 31 12:17:59 2013
+  write: io=6083.2KB, bw=34606 B/s, iops=3146 , runt=180001msec
+    clat (usec): min=0 , max=4727.4K, avg=313.77, stdev=6573.21
+     lat (usec): min=1 , max=4727.4K, avg=314.13, stdev=6573.21
+    clat percentiles (usec):
+     |  1.00th=[    2],  5.00th=[    3], 10.00th=[    3], 20.00th=[    5],
+     | 30.00th=[  227], 40.00th=[  278], 50.00th=[  290], 60.00th=[  306],
+     | 70.00th=[  322], 80.00th=[  330], 90.00th=[  338], 95.00th=[  346],
+     | 99.00th=[  398], 99.50th=[  482], 99.90th=[41728], 99.95th=[42752],
+     | 99.99th=[45824]
+    bw (KB/s)  : min=    0, max=   51, per=100.00%, avg=34.27, stdev=15.86
+    lat (usec) : 2=0.01%, 4=10.54%, 10=14.28%, 20=4.05%, 50=0.10%
+    lat (usec) : 100=0.01%, 250=4.38%, 500=66.16%, 750=0.16%, 1000=0.02%
+    lat (msec) : 2=0.04%, 4=0.03%, 10=0.04%, 20=0.02%, 50=0.18%
+    lat (msec) : 100=0.01%, 250=0.01%, >=2000=0.01%
+  cpu          : usr=1.46%, sys=6.88%, ctx=404867, majf=1, minf=86
+  IO depths    : 1=100.0%, 2=0.0%, 4=0.0%, 8=0.0%, 16=0.0%, 32=0.0%, >=64=0.0%
+     submit    : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     complete  : 0=0.0%, 4=100.0%, 8=0.0%, 16=0.0%, 32=0.0%, 64=0.0%, >=64=0.0%
+     issued    : total=r=0/w=566286/d=0, short=r=0/w=0/d=0
+
+Run status group 0 (all jobs):
+  WRITE: io=6083KB, aggrb=33KB/s, minb=33KB/s, maxb=33KB/s, mint=180001msec, maxt=180001msec
+
+Disk stats (read/write):
+    dm-0: ios=402227/534391, merge=0/0, ticks=160398/7627579, in_queue=7788132, util=90.58%, aggrios=402877/488885, aggrmerge=12/45541, aggrticks=160017/6928590, aggrin_queue=7088472, aggrutil=90.40%
+  vda: ios=402877/488885, merge=12/45541, ticks=160017/6928590, in_queue=7088472, util=90.40%
+11_write_1 finish: Sat Aug 31 12:17:59 JST 2013
